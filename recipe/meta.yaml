@@ -1,13 +1,13 @@
 {% set name = "stop-words" %}
-{% set version = "2018.7.23" %}
+{% set version = "2025.11.4" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 6df3ad5f5de697daa437e4445c86c73604e6bc138dd0dc0fac55664aa4e6b03e
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz"
+  sha256: 0459072b54b11e43a6fb4c5b05bda87d2accfc4f14c1697974f3739af0f7b43d
 
 build:
   number: 0
